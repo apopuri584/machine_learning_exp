@@ -1,0 +1,26 @@
+- y = Mx + C, train model with this equation
+- for a given data set, we'll find best fitting line 
+- Loss function: Is the error between predicted and actual value
+     - Use mean squared error function: (y_actual - y_predicted)
+     - square the difference
+     - Find mean for diference of all y_actuals and their y_predicteds
+
+
+
+
+Gradient Descent: 
+- Iterative optimization algorithm to find the minimum of a function (loss function)
+- large steps when slope is step and small steps when slope is shallow
+
+
+Step 1: initially m = 0, c = 0, and L = learning Rate (small value gives more accurate answer but may take a long time, large value get's us to bottom faster but may cause oscillilation because overshoots from value)
+
+Step 2: Take partial derivative of loss function with respect m (Dm) and c (Dc)
+
+Step 3: Do gradient descent: 
+- m = m - L * Dm
+- c = c - L * Dc
+
+Step 4: Repeat until loss function is zero
+
+
